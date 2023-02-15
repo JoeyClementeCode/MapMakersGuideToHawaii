@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Island 1
+  - Island 2
+  - Island 3
+  - Island 4
   layers:
   - Default
   - TransparentFX

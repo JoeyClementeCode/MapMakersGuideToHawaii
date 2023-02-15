@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 128060942}
   m_Layer: 5
   m_Name: Region (3)
-  m_TagString: Untagged
+  m_TagString: Island 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 275891930}
   m_Layer: 5
   m_Name: Region (2)
-  m_TagString: Untagged
+  m_TagString: Island 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 547321020}
   m_Layer: 5
   m_Name: Holders
-  m_TagString: Untagged
+  m_TagString: Island 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 817923164}
   m_Layer: 5
   m_Name: Region (1)
-  m_TagString: Untagged
+  m_TagString: Island 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -928,7 +928,7 @@ GameObject:
   - component: {fileID: 846608986}
   m_Layer: 5
   m_Name: Holders
-  m_TagString: Untagged
+  m_TagString: Island 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1174,7 +1174,7 @@ GameObject:
   - component: {fileID: 1325969299}
   m_Layer: 5
   m_Name: Holders
-  m_TagString: Untagged
+  m_TagString: Island 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

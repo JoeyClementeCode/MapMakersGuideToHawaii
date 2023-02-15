@@ -15,6 +15,7 @@ namespace team2
             if (transform.gameObject.CompareTag(draggableObject.gameObject.tag))
             {
                 draggableObject.dragParent = transform;
+                draggableObject.enabled = false;
             }
         }
     }
