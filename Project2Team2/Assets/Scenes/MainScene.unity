@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 3880661}
   - component: {fileID: 3880660}
   - component: {fileID: 3880659}
+  - component: {fileID: 3880663}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MainCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,6 +233,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &3880663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3880658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09290bded0febf24eb220e57233a2469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regions:
+  - {fileID: 8210150724121928616, guid: 963c1c36bb8d2ad48950b6940da40e45, type: 3}
+  - {fileID: 7359652902376351135, guid: f53d23ba1b95267469806ef51430a33d, type: 3}
+  - {fileID: 8951876251934739773, guid: 9d392d116ddf51f499d6d1f4c1590251, type: 3}
+  - {fileID: 6241153543869957276, guid: 8f2664ba482484f48b867f165ed7df10, type: 3}
+  activeRegionUI: []
+  dropDownInUse: 0
 --- !u!1 &128060940
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 128060943}
   dragParent: {fileID: 0}
+  set: 0
 --- !u!114 &128060943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -376,6 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 275891931}
   dragParent: {fileID: 0}
+  set: 0
 --- !u!114 &275891931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -653,7 +675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
+  m_Color: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -687,6 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b729b29fe1154478b380975ec01efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiPosition: {x: 250, y: 800, z: 0}
 --- !u!114 &547321021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,7 +881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -791, y: -261}
+  m_AnchoredPosition: {x: -753, y: -362}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817923164
@@ -875,6 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 817923165}
   dragParent: {fileID: 0}
+  set: 0
 --- !u!114 &817923165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,7 +912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -966,7 +990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
+  m_Color: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1000,6 +1024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b729b29fe1154478b380975ec01efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiPosition: {x: 250, y: 800, z: 0}
 --- !u!114 &846608987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1212,7 +1237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
+  m_Color: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1246,6 +1271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b729b29fe1154478b380975ec01efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiPosition: {x: 250, y: 800, z: 0}
 --- !u!114 &1325969300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,7 +1349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
+  m_Color: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1357,6 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b729b29fe1154478b380975ec01efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiPosition: {x: 250, y: 800, z: 0}
 --- !u!114 &1350094595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,7 +1444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -702, y: 319}
+  m_AnchoredPosition: {x: -712, y: -124}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1796569608
@@ -1434,6 +1461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1796569609}
   dragParent: {fileID: 0}
+  set: 0
 --- !u!114 &1796569609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1447,7 +1475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

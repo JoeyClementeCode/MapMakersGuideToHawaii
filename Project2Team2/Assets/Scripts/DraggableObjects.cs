@@ -10,6 +10,7 @@ namespace team2
     {
         public Image image;
         [HideInInspector] public Transform dragParent;
+        public bool set = false;
         
         public void OnBeginDrag(PointerEventData eventData)
         {
@@ -22,8 +23,8 @@ namespace team2
 
         public void OnDrag(PointerEventData eventData)
         {
-            Debug.Log("Dragging");
-            transform.position = Input.mousePosition;
+            if (set == false)
+               transform.position = Input.mousePosition;
         }
 
         public void OnEndDrag(PointerEventData eventData)
