@@ -16,9 +16,19 @@ namespace team2
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (col.gameObject.CompareTag("Line") && transform.tag == "Finish")
+            if (col.gameObject.CompareTag("Line") && transform.tag == "End" && mouse.isDrawing)
             {
                 Destroy(this.gameObject);
+            }
+
+            if (col.gameObject.CompareTag("Line") && transform.tag == "Start")
+            {
+                mouse.canDraw = true;
+            }
+
+            if (col.gameObject.CompareTag("Line") && transform.tag == "Obstacle")
+            {
+                mouse.ResetLine();
             }
         }
     }
