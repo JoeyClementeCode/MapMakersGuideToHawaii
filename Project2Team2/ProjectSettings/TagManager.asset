@@ -12,6 +12,7 @@ TagManager:
   - End
   - Obstacle
   - Line
+  - Region
   layers:
   - Default
   - TransparentFX
