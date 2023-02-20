@@ -9,20 +9,30 @@ namespace team2
         // Start is called before the first frame update
         void Start()
         {
+            Action(true);
+        }
+
+        public void Action(bool fade)
+        {
             switch (gameObject.tag)
             {
                 case "Region":
                     RegionTransition();
                     break;
+                case "SceneTransition":
+                    SceneTransition(fade);
+                    break;
             }
         }
-
-        // Update is called once per frame
-        void Update()
-        {
         
+        private void SceneTransition(bool fade)
+        {
+            if (fade)
+                LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 0.0f, 1.0f);
+            else
+                LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 1.0f, 1.0f);
         }
-
+        
         private void RegionTransition()
         {
             Vector3 initialPosition = transform.position;

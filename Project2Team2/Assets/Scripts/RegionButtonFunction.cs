@@ -22,7 +22,7 @@ namespace team2
 
         private void RegionButton()
         {
-            scene.LoadMicro();
+            scene.Load();
             Destroy(this.transform.parent.gameObject);
         }
     }
