@@ -11,18 +11,23 @@ namespace team2
         public Image image;
         [HideInInspector] public Transform dragParent;
         public bool set = false;
+        private bool notMoved = true;
         
         public void OnBeginDrag(PointerEventData eventData)
         {
+            notMoved = true;
             dragParent = transform.parent;
             transform.SetParent(transform.root);
             transform.SetAsLastSibling();
             image.raycastTarget = false;
             Debug.Log("Begin Drag");
+            if (notMoved)
+                LeanTween.scale(this.gameObject, new Vector3(2, 2, 2), 0.1f);
         }
 
         public void OnDrag(PointerEventData eventData)
         {
+            notMoved = false;
             if (set == false)
                transform.position = Input.mousePosition;
         }
@@ -32,6 +37,8 @@ namespace team2
             Debug.Log("End Drag");
             transform.SetParent(dragParent);
             image.raycastTarget = true;
+            if (!notMoved)
+                LeanTween.scale(this.gameObject, new Vector3(1, 1, 1), 0.1f);
         }
     }
 }

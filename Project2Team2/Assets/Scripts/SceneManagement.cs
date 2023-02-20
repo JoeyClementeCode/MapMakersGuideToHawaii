@@ -8,7 +8,6 @@ namespace team2
     public class SceneManagement : MonoBehaviour
     {
         public GameObject mainUI;
-        public GameObject microUI;
         private bool inMicro = false;
         
         public void LoadMicro()
@@ -16,13 +15,13 @@ namespace team2
             if (!inMicro)
             {
                 mainUI.SetActive(false);
-                microUI.SetActive(true);
+                SceneManager.LoadScene(1);
                 inMicro = true;
             }
             else
-            {
+            { 
                 mainUI.SetActive(true);
-                microUI.SetActive(false);
+                SceneManager.LoadScene(0);
                 inMicro = false;
             }
         }

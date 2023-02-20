@@ -25,8 +25,9 @@ namespace team2
 
         private void RegionTransition()
         {
-            transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-            LeanTween.scale(this.gameObject, new Vector3(1.75f, 1.75f, 1.75f), 0.5f);
+            Vector3 initialPosition = transform.position;
+            transform.position = new Vector3(2500, initialPosition.y, 0);
+            LeanTween.moveX(this.gameObject, initialPosition.x, 0.5f);
         }
     }
 }
