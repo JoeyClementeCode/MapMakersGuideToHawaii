@@ -6,13 +6,15 @@ namespace team2
 {
     public class UITransitions : MonoBehaviour
     {
+        public int sceneTransitionState = 0;
+        
         // Start is called before the first frame update
         void Start()
         {
-            Action(true);
+            Action();
         }
 
-        public void Action(bool fade)
+        public void Action()
         {
             switch (gameObject.tag)
             {
@@ -20,17 +22,26 @@ namespace team2
                     RegionTransition();
                     break;
                 case "SceneTransition":
-                    SceneTransition(fade);
+                    if (sceneTransitionState == 0)
+                        SceneTransitionIn();
+                    else if (sceneTransitionState == 1)
+                        SceneTransitionOut();
                     break;
             }
         }
         
-        private void SceneTransition(bool fade)
+        private void SceneTransitionIn()
         {
-            if (fade)
-                LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 0.0f, 1.0f);
-            else
-                LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 1.0f, 1.0f);
+            this.gameObject.GetComponent<CanvasGroup>().alpha = 1.0f;
+            LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 0.0f, 1.0f);
+            sceneTransitionState = 1;
+        }
+
+        private void SceneTransitionOut()
+        {
+            this.gameObject.GetComponent<CanvasGroup>().alpha = 0.0f;
+            LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 1.0f, 1.0f);
+            sceneTransitionState = 0;
         }
         
         private void RegionTransition()

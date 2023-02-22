@@ -17,7 +17,7 @@ namespace team2
         {
             notMoved = true;
             dragParent = transform.parent;
-            transform.SetParent(transform.root);
+            transform.SetParent(transform.parent);
             transform.SetAsLastSibling();
             image.raycastTarget = false;
             Debug.Log("Begin Drag");

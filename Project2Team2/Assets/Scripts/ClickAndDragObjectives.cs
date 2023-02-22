@@ -9,19 +9,17 @@ namespace team2
     public class ClickAndDragObjectives : MonoBehaviour
     {
         private ClickAndDrag mouse;
-        private SceneManagement scene;
 
         private void Start()
         {
             mouse = GameObject.Find("ClickAndDrag").GetComponent<ClickAndDrag>();
-            scene = GameObject.Find("SceneManager").GetComponent<SceneManagement>();
         }
 
         private void OnTriggerEnter2D(Collider2D col)
         {
             if (col.gameObject.CompareTag("Line") && transform.tag == "End" && mouse.isDrawing)
             {
-                scene.LoadMicro();
+                DataManager.Instance.sceneManager.Load();
             }
 
             if (col.gameObject.CompareTag("Line") && transform.tag == "Start")

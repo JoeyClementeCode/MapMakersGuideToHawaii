@@ -8,15 +8,7 @@ namespace team2
 {
     public class SceneManagement : MonoBehaviour
     {
-        public GameObject mainUI;
         private bool inMicro = false;
-        private UITransitions transition;
-
-        public void Start()
-        {
-            transition = GameObject.Find("TransitionUI").GetComponent<UITransitions>();
-        }
-
         public void Load()
         {
             StartCoroutine(LoadMicro());
@@ -26,17 +18,19 @@ namespace team2
         {
             if (!inMicro)
             {
-                transition.Action(false);
+                DataManager.Instance.transitions.Action();
                 yield return new WaitForSeconds(1);
-                mainUI.SetActive(false);
+                DataManager.Instance.transitions.Action();
+                DataManager.Instance.mainUI.SetActive(false);
                 SceneManager.LoadScene(1);
                 inMicro = true;
             }
             else
             { 
-                transition.Action(false);
+                DataManager.Instance.transitions.Action();
                 yield return new WaitForSeconds(1);
-                mainUI.SetActive(true);
+                DataManager.Instance.transitions.Action();
+                DataManager.Instance.mainUI.SetActive(true);
                 SceneManager.LoadScene(0);
                 inMicro = false;
             }

@@ -48,7 +48,7 @@ namespace team2
 
         private void Lock(int region)
         {
-            GameObject newUIText = Instantiate(uiManager.regions[region], transform.root, true);
+            GameObject newUIText = Instantiate(uiManager.regions[region], transform.parent, true);
             newUIText.transform.position = uiPosition;
             
             if (uiManager.dropDownInUse)
