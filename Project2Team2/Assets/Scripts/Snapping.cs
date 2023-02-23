@@ -20,7 +20,7 @@ namespace team2
         {
             GameObject dropped = eventData.pointerDrag;
             DraggableObjects draggableObject = dropped.GetComponent<DraggableObjects>();
-
+            
             if (transform.gameObject.CompareTag(draggableObject.gameObject.tag))
             {
                 draggableObject.dragParent = transform;

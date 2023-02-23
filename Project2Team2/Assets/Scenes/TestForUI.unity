@@ -1939,6 +1939,7 @@ MonoBehaviour:
   mainUI: {fileID: 3880658}
   sceneManager: {fileID: 2101703227}
   transitions: {fileID: 2115818902}
+  soundManager: {fileID: 1652316950}
 --- !u!4 &1600717062
 Transform:
   m_ObjectHideFlags: 0
@@ -1990,7 +1991,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b78b634449c7d84ab50def2f421556f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: f20537f4898773f4aa09c1f4979bb424, type: 3}
+  - {fileID: 8300000, guid: effdca990827c924b83b94db98b54d8a, type: 3}
+  - {fileID: 8300000, guid: 7b0f469d58700f743826cc8b3d8f9d2d, type: 3}
 --- !u!82 &1652316951
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2003,7 +2007,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

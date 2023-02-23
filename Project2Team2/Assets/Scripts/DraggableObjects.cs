@@ -22,7 +22,10 @@ namespace team2
             image.raycastTarget = false;
             Debug.Log("Begin Drag");
             if (notMoved)
+            {
                 LeanTween.scale(this.gameObject, new Vector3(2, 2, 2), 0.1f);
+                DataManager.Instance.soundManager.SetAudio("PickUpPiece");
+            }
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -37,8 +40,12 @@ namespace team2
             Debug.Log("End Drag");
             transform.SetParent(dragParent);
             image.raycastTarget = true;
+
             if (!notMoved)
+            {
                 LeanTween.scale(this.gameObject, new Vector3(1, 1, 1), 0.1f);
+                DataManager.Instance.soundManager.SetAudio("PutDownPiece1");
+            }
         }
     }
 }

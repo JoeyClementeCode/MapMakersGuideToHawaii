@@ -9,12 +9,12 @@ namespace team2
     public class SceneManagement : MonoBehaviour
     {
         private bool inMicro = false;
-        public void Load()
+        public void Load(int select)
         {
-            StartCoroutine(LoadMicro());
+            StartCoroutine(LoadMicro(select));
         }
         
-        public IEnumerator LoadMicro()
+        public IEnumerator LoadMicro(int select)
         {
             if (!inMicro)
             {
@@ -22,7 +22,7 @@ namespace team2
                 yield return new WaitForSeconds(1);
                 DataManager.Instance.transitions.Action();
                 DataManager.Instance.mainUI.SetActive(false);
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(select);
                 inMicro = true;
             }
             else
@@ -31,9 +31,14 @@ namespace team2
                 yield return new WaitForSeconds(1);
                 DataManager.Instance.transitions.Action();
                 DataManager.Instance.mainUI.SetActive(true);
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(select);
                 inMicro = false;
             }
+        }
+
+        public void SelectMicro(int select)
+        {
+            
         }
     }
 }

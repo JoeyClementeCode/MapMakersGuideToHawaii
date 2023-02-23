@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 457353774010714133}
   m_Layer: 5
   m_Name: ExploreButton
-  m_TagString: Untagged
+  m_TagString: Island 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -966,3 +966,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8acf0acc7d75d55459127318d42e08be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneTransitionState: 0

@@ -19,7 +19,7 @@ namespace team2
         {
             if (col.gameObject.CompareTag("Line") && transform.tag == "End" && mouse.isDrawing)
             {
-                DataManager.Instance.sceneManager.Load();
+                DataManager.Instance.sceneManager.Load(0);
             }
 
             if (col.gameObject.CompareTag("Line") && transform.tag == "Start")

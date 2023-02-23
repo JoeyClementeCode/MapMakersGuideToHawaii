@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using pest;
 using UnityEngine;
 
 namespace team2
@@ -12,6 +13,7 @@ namespace team2
         public GameObject mainUI;
         public SceneManagement sceneManager;
         public UITransitions transitions;
+        public SoundManager soundManager;
         
         private void Awake()
         {
