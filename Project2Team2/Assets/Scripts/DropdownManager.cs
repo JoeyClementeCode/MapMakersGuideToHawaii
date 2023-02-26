@@ -7,6 +7,7 @@ namespace team2
     public class DropdownManager : MonoBehaviour
     {
         public List<GameObject> regions;
+        public List<GameObject> insights;
         public List<GameObject> activeRegionUI;
         [HideInInspector] public bool dropDownInUse = false;
 

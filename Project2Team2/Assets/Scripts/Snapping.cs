@@ -13,7 +13,7 @@ namespace team2
 
         private void Start()
         {
-            uiManager = GameObject.Find("MainCanvas").GetComponent<DropdownManager>();
+            uiManager = GameObject.Find("DropdownManager").GetComponent<DropdownManager>();
         }
 
         public void OnDrop(PointerEventData eventData)

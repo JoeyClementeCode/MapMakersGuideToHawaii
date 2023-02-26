@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Region 3
+  m_text: Region 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
   m_sharedMaterial: {fileID: -1456448228748651388, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 457353774010714133}
   m_Layer: 5
   m_Name: ExploreButton
-  m_TagString: Island 3
+  m_TagString: Island 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -456,7 +456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.006592, y: 5.8877}
+  m_AnchoredPosition: {x: 21.006592, y: -3.8696}
   m_SizeDelta: {x: 435.8401, y: 434.6671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7588803619912885353
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Getting cooler
+  m_text: Ah this region is cool
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
   m_sharedMaterial: {fileID: -1456448228748651388, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 7061480967807736177}
   - component: {fileID: 9099576600494356201}
   m_Layer: 0
-  m_Name: Region3
+  m_Name: Region2Insight
   m_TagString: Region
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

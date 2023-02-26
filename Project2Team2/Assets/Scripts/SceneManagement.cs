@@ -35,10 +35,10 @@ namespace team2
                 inMicro = false;
             }
         }
-
-        public void SelectMicro(int select)
+        
+        public void Quit()
         {
-            
+            Application.Quit();
         }
     }
 }

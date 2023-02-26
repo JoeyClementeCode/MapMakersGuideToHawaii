@@ -27,6 +27,9 @@ namespace team2
                     else if (sceneTransitionState == 1)
                         SceneTransitionOut();
                     break;
+                case "Micro":
+                    RegionTransition();
+                    break;
             }
         }
         

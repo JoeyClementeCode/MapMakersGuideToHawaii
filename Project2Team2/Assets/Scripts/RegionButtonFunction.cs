@@ -16,8 +16,18 @@ namespace team2
         void Start()
         {
             button = GetComponent<Button>();
-            Selection();
-            button.onClick.AddListener(RegionButton);
+            
+            if (transform.parent.CompareTag("Region"))
+            {
+                Selection();
+                button.onClick.AddListener(RegionButton);
+            }
+            else if (transform.parent.CompareTag("Micro"))
+            {
+                button.onClick.AddListener(MicroButton);
+            }
+            
+
         }
 
         private void RegionButton()
@@ -27,6 +37,13 @@ namespace team2
             Destroy(transform.parent.gameObject);
         }
 
+        private void MicroButton()
+        {
+            DataManager.Instance.soundManager.SetAudio("PutDownPiece2");
+            DataManager.Instance.sceneManager.Load(0);
+            Destroy(transform.parent.gameObject);
+        }
+        
         private void Selection()
         {
             switch (transform.tag)
