@@ -15,36 +15,46 @@ namespace team2
         
         public void OnBeginDrag(PointerEventData eventData)
         {
-            notMoved = true;
-            dragParent = transform.parent;
-            transform.SetParent(transform.parent);
-            transform.SetAsLastSibling();
-            image.raycastTarget = false;
-            Debug.Log("Begin Drag");
-            if (notMoved)
+            if (!IslandManager.inExplorationMode)
             {
-                LeanTween.scale(this.gameObject, new Vector3(2, 2, 2), 0.1f);
-                DataManager.Instance.soundManager.SetAudio("PickUpPiece");
+                notMoved = true;
+                dragParent = transform.parent;
+                transform.SetParent(transform.parent);
+                transform.SetAsLastSibling();
+                image.raycastTarget = false;
+                Debug.Log("Begin Drag");
+                if (notMoved)
+                {
+                    LeanTween.scale(this.gameObject, new Vector3(2, 2, 2), 0.1f);
+                    DataManager.Instance.soundManager.SetAudio("PickUpPiece");
+                }
             }
         }
 
         public void OnDrag(PointerEventData eventData)
         {
-            notMoved = false;
-            if (set == false)
-               transform.position = Input.mousePosition;
+            if (!IslandManager.inExplorationMode)
+            {
+                notMoved = false;
+                if (set == false)
+                    transform.position = Input.mousePosition;
+            }
+
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            Debug.Log("End Drag");
-            transform.SetParent(dragParent);
-            image.raycastTarget = true;
-
-            if (!notMoved)
+            if (!IslandManager.inExplorationMode)
             {
-                LeanTween.scale(this.gameObject, new Vector3(1, 1, 1), 0.1f);
-                DataManager.Instance.soundManager.SetAudio("PutDownPiece1");
+                Debug.Log("End Drag");
+                transform.SetParent(dragParent);
+                image.raycastTarget = true;
+
+                if (!notMoved)
+                {
+                    LeanTween.scale(this.gameObject, new Vector3(1, 1, 1), 0.1f);
+                    DataManager.Instance.soundManager.SetAudio("PutDownPiece1");
+                }
             }
         }
     }

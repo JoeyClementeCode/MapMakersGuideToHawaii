@@ -8,12 +8,12 @@ namespace team2
 {
     public class Snapping : MonoBehaviour, IDropHandler
     {
-        private DropdownManager uiManager;
+        private InformationManager uiManager;
         public Vector3 uiPosition;
 
         private void Start()
         {
-            uiManager = GameObject.Find("DropdownManager").GetComponent<DropdownManager>();
+            uiManager = GameObject.Find("InformationManager").GetComponent<InformationManager>();
         }
 
         public void OnDrop(PointerEventData eventData)
@@ -21,43 +21,27 @@ namespace team2
             GameObject dropped = eventData.pointerDrag;
             DraggableObjects draggableObject = dropped.GetComponent<DraggableObjects>();
             
-            if (transform.gameObject.CompareTag(draggableObject.gameObject.tag))
+            if (transform.gameObject.CompareTag(draggableObject.gameObject.tag) && !IslandManager.inExplorationMode)
             {
                 draggableObject.dragParent = transform;
                 draggableObject.set = true;
-
+                
                 switch (draggableObject.gameObject.tag)
                 {
                     case "Island 1":
-                        Lock(0);
+                        uiManager.CreateDisplay(0);
                         break;
                     case "Island 2":
-                        Lock(1);
+                        uiManager.CreateDisplay(1);
                         break;
                     case "Island 3":
-                        Lock(2);
+                        uiManager.CreateDisplay(2);
                         break;
                     case "Island 4":
-                        Lock(3);
+                        uiManager.CreateDisplay(3);
                         break;
                 }
-                
-
             }
-        }
-
-        private void Lock(int region)
-        {
-            GameObject newUIText = Instantiate(uiManager.regions[region], transform.parent, true);
-            newUIText.transform.position = uiPosition;
-            
-            if (uiManager.dropDownInUse)
-            {
-                uiManager.InUse();
-            }
-            
-            uiManager.activeRegionUI.Add(newUIText);
-            uiManager.dropDownInUse = true;
         }
     }
 }

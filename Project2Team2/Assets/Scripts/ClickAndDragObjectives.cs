@@ -9,13 +9,13 @@ namespace team2
     public class ClickAndDragObjectives : MonoBehaviour
     {
         private ClickAndDrag mouse;
-        private DropdownManager uiManager;
+        private InformationManager uiManager;
         public Vector3 uiPosition;
 
         private void Start()
         {
             mouse = GameObject.Find("ClickAndDrag").GetComponent<ClickAndDrag>();
-            uiManager = GameObject.Find("DropdownManager").GetComponent<DropdownManager>();
+            uiManager = GameObject.Find("DropdownManager").GetComponent<InformationManager>();
         }
 
         private void OnTriggerEnter2D(Collider2D col)

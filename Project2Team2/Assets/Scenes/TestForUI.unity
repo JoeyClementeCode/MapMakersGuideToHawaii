@@ -226,6 +226,7 @@ RectTransform:
   - {fileID: 817923163}
   - {fileID: 275891929}
   - {fileID: 128060941}
+  - {fileID: 1324680615}
   m_Father: {fileID: 1600717062}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -245,7 +246,7 @@ GameObject:
   - component: {fileID: 19685481}
   - component: {fileID: 19685482}
   m_Layer: 0
-  m_Name: DropdownManager
+  m_Name: InformationManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -278,15 +279,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09290bded0febf24eb220e57233a2469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  regions:
-  - {fileID: 8951876251934739773, guid: 9d392d116ddf51f499d6d1f4c1590251, type: 3}
-  - {fileID: 8951876251934739773, guid: e08090f678b80a444bb920ffe6406987, type: 3}
-  - {fileID: 8951876251934739773, guid: 70800aac46f699b44a7da524bf457fc5, type: 3}
-  - {fileID: 8951876251934739773, guid: 7a127f46b83175a4bb11e183ef0f33c6, type: 3}
-  - {fileID: 8951876251934739773, guid: b7c0eb6adb1e59f4a9cf56f98cf6cd65, type: 3}
-  insights: []
-  activeRegionUI: []
+  region1Info:
+  - Region 1
+  - Really fun game
+  region2Info:
+  - Region 2
+  - Really fun
+  region3Info:
+  - Region 3
+  - Less fun
+  region4Info:
+  - Region 4
+  - That's not fun
+  activeRegionUI: {fileID: 0}
   dropDownInUse: 0
+  dropdownTemplate: {fileID: 8951876251934739773, guid: 9db3d09833674d54b8eb1f84df4d6bcb, type: 3}
 --- !u!1 &39096107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,6 +1807,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202501190}
   m_CullTransparentMesh: 1
+--- !u!1 &1324680614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324680615}
+  - component: {fileID: 1324680616}
+  m_Layer: 0
+  m_Name: ExplorationMode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1324680615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324680614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3880662}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1324680616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324680614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d24fb29a7e4a674e9893db6a90fde03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionHolders:
+  - {fileID: 1350094594}
+  - {fileID: 846608986}
+  - {fileID: 547321020}
+  - {fileID: 1325969299}
+  regions:
+  - {fileID: 1796569608}
+  - {fileID: 817923164}
+  - {fileID: 275891930}
+  - {fileID: 128060942}
 --- !u!1 &1325969295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2920,7 +2981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2115818902
 MonoBehaviour:
   m_ObjectHideFlags: 0
