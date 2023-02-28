@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace team2
 {
     public class ClickAndDrag : MonoBehaviour
     {
         private LineRenderer line;
+        public Slider slider;
         private BoxCollider2D mouseCollider;
         private Vector3 screenPos;
         public Vector3 worldPos;
@@ -14,18 +16,24 @@ namespace team2
         public bool isDrawing = false;
         public bool canDraw = false;
         
+        public int maxDistanceCount = 60;
+        
         // Start is called before the first frame update
         void Start()
         {
             line = GetComponent<LineRenderer>();
             mouseCollider = GetComponent<BoxCollider2D>();
+            slider.maxValue = maxDistanceCount;
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0) && line.positionCount < maxDistanceCount)
             {
+                int tempCount = maxDistanceCount;
+                tempCount -= line.positionCount;
+                slider.value = tempCount;
                 screenPos = Input.mousePosition;
                 worldPos = Camera.main.ScreenToWorldPoint(screenPos);
                 worldPos.z = 0;

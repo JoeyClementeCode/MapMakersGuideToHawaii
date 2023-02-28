@@ -14,6 +14,8 @@ namespace team2
         public SceneManagement sceneManager;
         public UITransitions transitions;
         public SoundManager soundManager;
+        public InformationManager info;
+        public IslandManager island;
         
         private void Awake()
         {

@@ -15,7 +15,7 @@ namespace team2
         
         public void OnBeginDrag(PointerEventData eventData)
         {
-            if (!IslandManager.inExplorationMode)
+            if (!DataManager.Instance.island.inExplorationMode)
             {
                 notMoved = true;
                 dragParent = transform.parent;
@@ -29,22 +29,29 @@ namespace team2
                     DataManager.Instance.soundManager.SetAudio("PickUpPiece");
                 }
             }
+            else
+            {
+                Debug.Log("In Exploration Mode");
+            }
         }
 
         public void OnDrag(PointerEventData eventData)
         {
-            if (!IslandManager.inExplorationMode)
+            if (!DataManager.Instance.island.inExplorationMode)
             {
                 notMoved = false;
                 if (set == false)
                     transform.position = Input.mousePosition;
             }
-
+            else
+            {
+                Debug.Log("In Exploration Mode");
+            }
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            if (!IslandManager.inExplorationMode)
+            if (!DataManager.Instance.island.inExplorationMode)
             {
                 Debug.Log("End Drag");
                 transform.SetParent(dragParent);
@@ -55,6 +62,10 @@ namespace team2
                     LeanTween.scale(this.gameObject, new Vector3(1, 1, 1), 0.1f);
                     DataManager.Instance.soundManager.SetAudio("PutDownPiece1");
                 }
+            }
+            else
+            {
+                Debug.Log("In Exploration Mode");
             }
         }
     }

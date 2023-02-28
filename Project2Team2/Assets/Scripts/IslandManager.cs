@@ -8,7 +8,7 @@ namespace team2
     {
         public List<Snapping> regionHolders;
         public List<DraggableObjects> regions;
-        public static bool inExplorationMode = false;
+        public bool inExplorationMode = false;
 
         public void Explore()
         {

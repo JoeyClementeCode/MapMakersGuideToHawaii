@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2072485571058950437}
   - component: {fileID: 3138543901331265973}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Region 3
+  m_text: Region 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
   m_sharedMaterial: {fileID: -1456448228748651388, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 253480817614883872}
   - component: {fileID: 6604561069242848373}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 457353774010714133}
   m_Layer: 5
   m_Name: ExploreButton
-  m_TagString: Island 3
+  m_TagString: Micro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -419,6 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4915579eda03bae4aab382bed9f8408d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameSelect: 0
 --- !u!1 &5663846547581883965
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +432,7 @@ GameObject:
   - component: {fileID: 7588803619912885353}
   - component: {fileID: 5003762714186653904}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,7 +457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.006592, y: 5.8877}
+  m_AnchoredPosition: {x: 21.006592, y: -3.8696}
   m_SizeDelta: {x: 435.8401, y: 434.6671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7588803619912885353
@@ -509,7 +510,7 @@ GameObject:
   - component: {fileID: 9127816933999676220}
   - component: {fileID: 5635652384955263563}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,7 +564,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Getting cooler
+  m_text: Ah this region is cool
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
   m_sharedMaterial: {fileID: -1456448228748651388, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
@@ -642,9 +643,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7061480967807736177}
   - component: {fileID: 9099576600494356201}
+  - component: {fileID: 5281904000001091019}
   m_Layer: 0
-  m_Name: Region3
-  m_TagString: Region
+  m_Name: MicroTemplate
+  m_TagString: Micro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -679,3 +681,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTransitionState: 0
+--- !u!114 &5281904000001091019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8951876251934739773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbdad3884a2ac554480a68a89960da57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerBox: {fileID: 3138543901331265973}
+  bodyBox: {fileID: 5635652384955263563}

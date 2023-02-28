@@ -10,7 +10,7 @@ namespace team2
     public class RegionButtonFunction : MonoBehaviour
     {
         private Button button;
-        private int gameSelect = 0;
+        public int gameSelect = 0;
 
         // Start is called before the first frame update
         void Start()
@@ -22,12 +22,10 @@ namespace team2
                 Selection();
                 button.onClick.AddListener(RegionButton);
             }
-            else if (transform.parent.CompareTag("Micro"))
+            else if (transform.CompareTag("Micro"))
             {
                 button.onClick.AddListener(MicroButton);
             }
-            
-
         }
 
         private void RegionButton()
@@ -46,18 +44,18 @@ namespace team2
         
         private void Selection()
         {
-            switch (transform.tag)
+            switch (transform.parent.name)
             {
-                case "Island 1":
+                case "Region 1":
                     gameSelect = 1;
                     break;
-                case "Island 2":
+                case "Region 2":
                     gameSelect = 2;
                     break;
-                case "Island 3":
+                case "Region 3":
                     gameSelect = 3;
                     break;
-                case "Island 4":
+                case "Region 4":
                     gameSelect = 4;
                     break;
             }

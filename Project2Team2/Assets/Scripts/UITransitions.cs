@@ -49,7 +49,7 @@ namespace team2
         
         private void RegionTransition()
         {
-            Vector3 initialPosition = transform.position;
+            Vector3 initialPosition = new Vector2(Screen.width / 2.0f, Screen.height / 2.0f);
             transform.position = new Vector3(2500, initialPosition.y, 0);
             LeanTween.moveX(this.gameObject, initialPosition.x, 0.5f);
         }
