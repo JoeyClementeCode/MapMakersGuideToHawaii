@@ -17,6 +17,9 @@ namespace team2
         public bool canDraw = false;
         
         public int maxDistanceCount = 60;
+        int tempCount;
+
+        public int extraObjectivesCount = 0;
         
         // Start is called before the first frame update
         void Start()
@@ -24,6 +27,7 @@ namespace team2
             line = GetComponent<LineRenderer>();
             mouseCollider = GetComponent<BoxCollider2D>();
             slider.maxValue = maxDistanceCount;
+            tempCount = maxDistanceCount;
         }
 
         // Update is called once per frame
@@ -31,7 +35,7 @@ namespace team2
         {
             if (Input.GetMouseButton(0) && line.positionCount < maxDistanceCount)
             {
-                int tempCount = maxDistanceCount;
+
                 tempCount -= line.positionCount;
                 slider.value = tempCount;
                 screenPos = Input.mousePosition;
@@ -59,6 +63,7 @@ namespace team2
 
         public void ResetLine()
         {
+            tempCount = maxDistanceCount;
             canDraw = false;
             isDrawing = false;
             line.positionCount = 0;

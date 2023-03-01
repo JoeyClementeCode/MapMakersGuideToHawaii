@@ -15,6 +15,7 @@ TagManager:
   - Region
   - SceneTransition
   - Micro
+  - Extra
   layers:
   - Default
   - TransparentFX

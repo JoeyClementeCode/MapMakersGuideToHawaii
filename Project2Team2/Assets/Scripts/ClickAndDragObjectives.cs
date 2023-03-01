@@ -10,6 +10,7 @@ namespace team2
     {
         private ClickAndDrag mouse;
 
+
         private void Start()
         {
             mouse = GameObject.Find("ClickAndDrag").GetComponent<ClickAndDrag>();
@@ -17,7 +18,7 @@ namespace team2
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (col.gameObject.CompareTag("Line") && transform.tag == "End" && mouse.isDrawing)
+            if (col.gameObject.CompareTag("Line") && transform.tag == "End" && mouse.isDrawing && mouse.extraObjectivesCount == 3)
             {
                 DataManager.Instance.info.MakeMicroDisplay();
             }
@@ -30,6 +31,11 @@ namespace team2
             if (col.gameObject.CompareTag("Line") && transform.tag == "Obstacle")
             {
                 mouse.ResetLine();
+            }
+
+            if (col.gameObject.CompareTag("Line") && transform.tag == "Extra")
+            {
+                mouse.extraObjectivesCount++;
             }
         }
     }
