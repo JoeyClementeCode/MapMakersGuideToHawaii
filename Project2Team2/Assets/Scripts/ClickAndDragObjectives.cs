@@ -19,21 +19,7 @@ namespace team2
         {
             if (col.gameObject.CompareTag("Line") && transform.tag == "End" && mouse.isDrawing)
             {
-                switch (gameObject.transform.name)
-                {
-                    case "EndPoint1":
-                        DataManager.Instance.info.MicroDisplay(0);
-                        break;
-                    case "EndPoint2":
-                        DataManager.Instance.info.MicroDisplay(1);
-                        break;
-                    case "EndPoint3":
-                        DataManager.Instance.info.MicroDisplay(2);
-                        break;
-                    case "EndPoint4":
-                        DataManager.Instance.info.MicroDisplay(3);
-                        break;
-                }
+                DataManager.Instance.info.MakeMicroDisplay();
             }
 
             if (col.gameObject.CompareTag("Line") && transform.tag == "Start")

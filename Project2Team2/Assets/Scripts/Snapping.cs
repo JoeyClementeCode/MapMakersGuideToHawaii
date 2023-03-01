@@ -18,22 +18,9 @@ namespace team2
             {
                 draggableObject.dragParent = transform;
                 draggableObject.set = true;
-                
-                switch (draggableObject.gameObject.tag)
-                {
-                    case "Island 1":
-                        DataManager.Instance.info.CreateDisplay(0);
-                        break;
-                    case "Island 2":
-                        DataManager.Instance.info.CreateDisplay(1);
-                        break;
-                    case "Island 3":
-                        DataManager.Instance.info.CreateDisplay(2);
-                        break;
-                    case "Island 4":
-                        DataManager.Instance.info.CreateDisplay(3);
-                        break;
-                }
+
+                DataManager.Instance.info.currentRegion = gameObject.GetComponent<UIHolder>();
+                DataManager.Instance.info.MakeDisplay();
             }
             else
             {
