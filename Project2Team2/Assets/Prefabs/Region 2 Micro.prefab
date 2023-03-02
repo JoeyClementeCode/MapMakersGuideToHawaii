@@ -291,7 +291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Region 1
+  m_text: Kealakekua
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
   m_sharedMaterial: {fileID: -1456448228748651388, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
@@ -532,8 +532,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.103731, y: -77.07503}
-  m_SizeDelta: {x: 435.84, y: 280.5102}
+  m_AnchoredPosition: {x: 0.4579, y: -77.07503}
+  m_SizeDelta: {x: 402.5484, y: 280.5102}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3666954503623718544
 CanvasRenderer:
@@ -563,7 +563,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ah this region is coolio x2
+  m_text: When the Americans came, many of the first Hawaiians had to change how
+    they lived. Lots lost their homes, and many were poor. Today, the first people
+    are slowly taking back their land. Some islands are now native-only!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
   m_sharedMaterial: {fileID: -1456448228748651388, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
