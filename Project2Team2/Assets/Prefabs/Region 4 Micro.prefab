@@ -164,7 +164,7 @@ RectTransform:
   m_GameObject: {fileID: 2184790748135837961}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.7180448, y: 9.283481, z: 10.8678665}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 591350770056065909}
@@ -173,7 +173,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 132.28424, y: -776.2541}
+  m_AnchoredPosition: {x: 132.28424, y: -190}
   m_SizeDelta: {x: 193.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &189914963545490915
@@ -292,10 +292,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2292901272614885186}
   - component: {fileID: 1431419990624302426}
-  - component: {fileID: 7826666932479464806}
   m_Layer: 0
   m_Name: Region 4 Micro
-  m_TagString: Untagged
+  m_TagString: Micro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -307,7 +306,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3342641796490782866}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.7916785, y: 1.7, z: 1.7916785}
   m_ConstrainProportionsScale: 0
@@ -330,20 +329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTransitionState: 0
---- !u!114 &7826666932479464806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3342641796490782866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbdad3884a2ac554480a68a89960da57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  headerBox: {fileID: 345657877411135768}
-  bodyBox: {fileID: 1442711321617315397}
 --- !u!1 &5014045088219845028
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +356,7 @@ RectTransform:
   m_GameObject: {fileID: 5014045088219845028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 92.97287}
-  m_LocalScale: {x: 5.751489, y: 4.913, z: 5.751489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5060245673641176790}
@@ -654,14 +639,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0

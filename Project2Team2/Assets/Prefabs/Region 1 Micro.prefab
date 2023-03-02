@@ -592,14 +592,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -644,7 +644,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7061480967807736177}
   - component: {fileID: 9099576600494356201}
-  - component: {fileID: 5281904000001091019}
   m_Layer: 0
   m_Name: Region 1 Micro
   m_TagString: Micro
@@ -682,17 +681,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTransitionState: 0
---- !u!114 &5281904000001091019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8951876251934739773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbdad3884a2ac554480a68a89960da57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  headerBox: {fileID: 3138543901331265973}
-  bodyBox: {fileID: 5635652384955263563}

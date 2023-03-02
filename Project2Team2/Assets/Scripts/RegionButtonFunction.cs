@@ -36,7 +36,7 @@ namespace team2
         private void MicroButton()
         {
             DataManager.Instance.soundManager.SetAudio("PutDownPiece2");
-            DataManager.Instance.sceneManager.Load(0);
+            DataManager.Instance.sceneManager.Load(1);
             Destroy(transform.parent.gameObject);
         }
     }

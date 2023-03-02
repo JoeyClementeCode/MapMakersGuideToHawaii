@@ -2144,7 +2144,9 @@ MonoBehaviour:
   worldPos: {x: 0, y: 0, z: 0}
   isDrawing: 0
   canDraw: 0
-  maxDistanceCount: 300
+  targetTime: 2
+  tempTime: 0
+  extraObjectivesCount: 0
 --- !u!120 &1405211256
 LineRenderer:
   m_ObjectHideFlags: 0

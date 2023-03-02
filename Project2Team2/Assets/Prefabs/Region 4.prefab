@@ -29,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 55703383581436363}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.7180448, y: 9.283488, z: 10.867866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 138222320455341052}
@@ -38,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 132.28426, y: -776.2541}
+  m_AnchoredPosition: {x: 132.28426, y: -193}
   m_SizeDelta: {x: 193.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4820581417088100900
@@ -174,7 +174,7 @@ RectTransform:
   m_GameObject: {fileID: 1577002785387606893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 92.97288}
-  m_LocalScale: {x: 5.7514935, y: 4.913, z: 5.7514935}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 776516881143159420}
@@ -455,14 +455,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -507,10 +507,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8206513891812336478}
   - component: {fileID: 645468023243814278}
-  - component: {fileID: 2902269354835932992}
   m_Layer: 0
   m_Name: Region 4
-  m_TagString: Untagged
+  m_TagString: Region
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -522,7 +521,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7904924595613596342}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.7916785, y: 1.7, z: 1.7916785}
   m_ConstrainProportionsScale: 0
@@ -545,20 +544,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTransitionState: 0
---- !u!114 &2902269354835932992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7904924595613596342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbdad3884a2ac554480a68a89960da57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  headerBox: {fileID: 2402269486246608414}
-  bodyBox: {fileID: 7813610939737817099}
 --- !u!1 &8591158875011162271
 GameObject:
   m_ObjectHideFlags: 0

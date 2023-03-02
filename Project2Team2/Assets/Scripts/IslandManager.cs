@@ -6,8 +6,8 @@ namespace team2
 {
     public class IslandManager : MonoBehaviour
     {
-        public List<Snapping> regionHolders;
-        public List<DraggableObjects> regions;
+        public List<NewSnapping> regionHolders;
+        public List<DraggableObject2> regions;
         public bool inExplorationMode = false;
 
         public void Explore()
@@ -19,8 +19,6 @@ namespace team2
                     inExplorationMode = false;
                 }
             }
-
-            inExplorationMode = true;
         }
         
         
