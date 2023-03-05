@@ -35,7 +35,8 @@ namespace team2
         
         private void SceneTransitionIn()
         {
-            this.gameObject.GetComponent<CanvasGroup>().alpha = 1.0f;
+            this.gameObject.GetComponent<CanvasGroup>().alpha = 1.0f; 
+            Camera.main.orthographicSize = 5.0f;
             LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 0.0f, 1.0f);
             sceneTransitionState = 1;
         }
@@ -43,6 +44,9 @@ namespace team2
         private void SceneTransitionOut()
         {
             this.gameObject.GetComponent<CanvasGroup>().alpha = 0.0f;
+            LeanTween.value(Camera.main.gameObject, 5.0f, 2.0f, 1.0f).setOnUpdate((float val) =>
+            {
+                Camera.main.orthographicSize = val; } );
             LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 1.0f, 1.0f);
             sceneTransitionState = 0;
         }
