@@ -12,7 +12,7 @@ namespace team2
         private void OnTriggerStay2D(Collider2D other)
         {
 
-            if (transform.gameObject.CompareTag(other.gameObject.tag) && !DataManager.Instance.island.inExplorationMode)
+            if (transform.gameObject.CompareTag(other.gameObject.tag) && !DataManager.Instance.island.inExplorationMode && !DataManager.Instance.info.dropDownInUse)
             {
                 if (!other.gameObject.GetComponent<DraggableObject2>().isDragging && !collided)
                 {
@@ -20,17 +20,20 @@ namespace team2
                     other.gameObject.transform.position = transform.position;
                     other.gameObject.transform.localScale = Vector3.one;
                     other.gameObject.GetComponent<DraggableObject2>().set = true;
+                    other.gameObject.transform.parent = transform;
                     
                     DataManager.Instance.info.currentRegion = gameObject.GetComponent<UIHolder>();
                     DataManager.Instance.info.MakeDisplay();
+                    DataManager.Instance.island.inExplorationMode = DataManager.Instance.island.Explore();
                 }
-
-
             }
             else
             {
                 Debug.Log("In Exploration Mode");
             }
         }
+        
+                
+
     }
 }

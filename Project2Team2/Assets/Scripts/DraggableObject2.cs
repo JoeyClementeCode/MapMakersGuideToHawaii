@@ -12,7 +12,7 @@ namespace team2
         Vector3 offset;
         void Update()
         {
-            if (!DataManager.Instance.island.inExplorationMode)
+            if (!DataManager.Instance.island.inExplorationMode && !DataManager.Instance.info.dropDownInUse)
             {
                 Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 if (Input.GetMouseButtonDown(0))
@@ -38,6 +38,15 @@ namespace team2
                     selectedObject = null;
                     DataManager.Instance.soundManager.SetAudio("PutDownPiece1");
                 }
+            }
+        }
+        
+        private void OnMouseDown()
+        {
+            if (DataManager.Instance.island.inExplorationMode && set && !DataManager.Instance.info.dropDownInUse)
+            {
+                DataManager.Instance.info.currentRegion = gameObject.GetComponentInParent<UIHolder>();
+                DataManager.Instance.info.MakeDisplay();
             }
         }
     }

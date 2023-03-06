@@ -10,15 +10,17 @@ namespace team2
         public List<DraggableObject2> regions;
         public bool inExplorationMode = false;
 
-        public void Explore()
+        public bool Explore()
         {
-            foreach (var region in regions)
+            for (int i = 0; i < regions.Count; i++)
             {
-                if (!region.set)
+                if (regions[i].set == false)
                 {
-                    inExplorationMode = false;
+                    return false;
                 }
             }
+
+            return true;
         }
         
         
