@@ -35,6 +35,7 @@ namespace team2
                 if (Input.GetMouseButtonUp(0) && selectedObject)
                 {
                     isDragging = false;
+                    selectedObject.GetComponent<ParticleSystem>().Play();
                     selectedObject = null;
                     DataManager.Instance.soundManager.SetAudio("PutDownPiece1");
                 }
