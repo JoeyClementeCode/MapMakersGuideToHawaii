@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -36,6 +37,14 @@ namespace team2
             if (activeRegionUI != null)
                 Destroy(activeRegionUI);
             dropDownInUse = false;
+        }
+
+        private void Update()
+        {
+            if (dropDownInUse && Input.GetKeyDown(KeyCode.Escape))
+            {
+                InUse();
+            }
         }
     }
 }

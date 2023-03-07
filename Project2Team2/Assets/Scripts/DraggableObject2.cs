@@ -9,6 +9,7 @@ namespace team2
         public GameObject selectedObject;
         public bool isDragging = false;
         public bool set;
+        public bool explored = false;
         Vector3 offset;
         void Update()
         {
@@ -35,7 +36,6 @@ namespace team2
                 if (Input.GetMouseButtonUp(0) && selectedObject)
                 {
                     isDragging = false;
-                    selectedObject.GetComponent<ParticleSystem>().Play();
                     selectedObject = null;
                     DataManager.Instance.soundManager.SetAudio("PutDownPiece1");
                 }
@@ -44,7 +44,7 @@ namespace team2
         
         private void OnMouseDown()
         {
-            if (DataManager.Instance.island.inExplorationMode && set && !DataManager.Instance.info.dropDownInUse)
+            if (!explored || (DataManager.Instance.island.inExplorationMode && set && !DataManager.Instance.info.dropDownInUse))
             {
                 DataManager.Instance.info.currentRegion = gameObject.GetComponentInParent<UIHolder>();
                 DataManager.Instance.info.MakeDisplay();

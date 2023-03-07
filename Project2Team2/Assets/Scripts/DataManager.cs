@@ -16,7 +16,7 @@ namespace team2
         public SoundManager soundManager;
         public InformationManager info;
         public IslandManager island;
-        
+
         private void Awake()
         {
             if (Instance != null)

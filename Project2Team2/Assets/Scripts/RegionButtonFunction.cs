@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -37,6 +38,23 @@ namespace team2
         {
             DataManager.Instance.soundManager.SetAudio("PutDownPiece2");
             DataManager.Instance.sceneManager.Load(1);
+
+            switch (transform.parent.name)
+            {
+                case "Region 1 Micro(Clone)":
+                    DataManager.Instance.island.region1Explored = true;
+                    break;
+                case "Region 2 Micro(Clone)":
+                    DataManager.Instance.island.region2Explored = true;
+                    break;
+                case "Region 3 Micro(Clone)":
+                    DataManager.Instance.island.region3Explored = true;
+                    break;
+                case "Region 4 Micro(Clone)":
+                    DataManager.Instance.island.region4Explored = true;
+                    break;
+            }
+            DataManager.Instance.island.inExplorationMode = DataManager.Instance.island.Explore();
             Destroy(transform.parent.gameObject);
         }
     }

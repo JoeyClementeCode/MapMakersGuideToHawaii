@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 526038439974749952}
   m_Layer: 5
   m_Name: Region4Holder
-  m_TagString: Region
+  m_TagString: Island 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1089,7 +1089,7 @@ GameObject:
   - component: {fileID: 526038440941956237}
   m_Layer: 5
   m_Name: Region1Holder
-  m_TagString: Region
+  m_TagString: Island 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1304,7 +1304,7 @@ GameObject:
   - component: {fileID: 526038441004941186}
   m_Layer: 5
   m_Name: Region2Holder
-  m_TagString: Region
+  m_TagString: Island 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1640,7 +1640,7 @@ GameObject:
   - component: {fileID: 526038441345707974}
   m_Layer: 5
   m_Name: Region3Holder
-  m_TagString: Region
+  m_TagString: Island 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1811,7 +1811,7 @@ GameObject:
   - component: {fileID: 464987065836973434}
   m_Layer: 3
   m_Name: Region2
-  m_TagString: Region
+  m_TagString: Island 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6842,7 +6842,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 11
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -6890,7 +6890,7 @@ GameObject:
   - component: {fileID: 6487277165062430962}
   m_Layer: 3
   m_Name: Region3
-  m_TagString: Region
+  m_TagString: Island 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11900,7 +11900,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 11
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -11948,7 +11948,7 @@ GameObject:
   - component: {fileID: 6434766760130027223}
   m_Layer: 3
   m_Name: Region1
-  m_TagString: Region
+  m_TagString: Island 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16967,7 +16967,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 11
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -17015,7 +17015,7 @@ GameObject:
   - component: {fileID: 1245232064506026525}
   m_Layer: 3
   m_Name: Region4
-  m_TagString: Region
+  m_TagString: Island 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22051,7 +22051,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 11
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0

@@ -21,10 +21,10 @@ namespace team2
                     other.gameObject.transform.localScale = Vector3.one;
                     other.gameObject.GetComponent<DraggableObject2>().set = true;
                     other.gameObject.transform.parent = transform;
+                    other.gameObject.GetComponent<ParticleSystem>().Play();
                     
                     DataManager.Instance.info.currentRegion = gameObject.GetComponent<UIHolder>();
                     DataManager.Instance.info.MakeDisplay();
-                    DataManager.Instance.island.inExplorationMode = DataManager.Instance.island.Explore();
                 }
             }
             else
