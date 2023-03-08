@@ -11,7 +11,10 @@ namespace team2
     {
         [SerializeField] private GameObject helpScreen;
         [SerializeField] private GameObject mainUI;
+        [SerializeField] private GameObject credits1;
+        [SerializeField] private GameObject credits2;
         private bool helpLoaded = false;
+        private bool creditsSwitched = false;
 
         public void loadMenu()
         {
@@ -77,7 +80,24 @@ namespace team2
                 helpLoaded = false;
             }
         }
-        
+
+        public void LoadCreditsNext()
+        {
+            if (!creditsSwitched)
+            {
+                credits2.SetActive(true);
+                credits1.SetActive(false);
+                creditsSwitched = true;
+            }
+            else if (creditsSwitched)
+            {
+                credits2.SetActive(false);
+                credits1.SetActive(true);
+                creditsSwitched = false;
+            }
+
+        }
+
         public void Quit()
         {
             Application.Quit();
