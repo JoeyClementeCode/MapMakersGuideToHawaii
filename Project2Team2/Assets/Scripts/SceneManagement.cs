@@ -9,6 +9,10 @@ namespace team2
     public class SceneManagement : MonoBehaviour
     {
         private bool inMicro = false;
+        public bool tutorialShown = false;
+        public bool clickShown = false;
+        public bool explorationShown = false;
+        
         public void Load(int select)
         {
             StartCoroutine(LoadMicro(select));
@@ -24,6 +28,12 @@ namespace team2
                 DataManager.Instance.mainUI.SetActive(false);
                 SceneManager.LoadScene(select);
                 inMicro = true;
+
+                if (!clickShown)
+                {
+                    DataManager.Instance.info.ClickDisplay();
+                    clickShown = true;
+                }
             }
             else
             { 

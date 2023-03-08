@@ -9,7 +9,7 @@ namespace team2
     public class ClickAndDragObjectives : MonoBehaviour
     {
         private ClickAndDrag mouse;
-
+        [SerializeField] private GameObject infoPopUp;
 
         private void Start()
         {
@@ -36,6 +36,14 @@ namespace team2
             if (col.gameObject.CompareTag("Line") && transform.tag == "Extra")
             {
                 mouse.extraObjectivesCount++;
+            }
+        }
+        
+        private void OnMouseDown()
+        {
+            if (DataManager.Instance.island.inExplorationMode)
+            {
+                DataManager.Instance.info.MakeResourceDisplay(infoPopUp);
             }
         }
     }

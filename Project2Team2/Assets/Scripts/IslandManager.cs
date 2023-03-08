@@ -38,6 +38,11 @@ namespace team2
                 }
             }
 
+            if (!DataManager.Instance.sceneManager.explorationShown)
+            {
+                DataManager.Instance.info.ExplorationDisplay();
+                DataManager.Instance.sceneManager.explorationShown = true;
+            }
             return true;
         }
         

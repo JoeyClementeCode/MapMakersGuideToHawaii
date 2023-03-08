@@ -46,6 +46,12 @@ namespace team2
             DataManager.Instance.mainUI.SetActive(true);
             DataManager.Instance.transitions.Action();
             SceneManager.LoadScene(1);
+
+            if (!DataManager.Instance.sceneManager.tutorialShown)
+            {
+                DataManager.Instance.info.TutorialDisplay();
+                DataManager.Instance.sceneManager.tutorialShown = true;
+            }
         }
 
         public IEnumerator LoadCredits()

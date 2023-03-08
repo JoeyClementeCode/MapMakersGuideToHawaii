@@ -35,11 +35,8 @@ namespace team2
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetMouseButton(0) && tempTime >= 0)
+            if (Input.GetMouseButton(0) && tempTime >= 0 && !DataManager.Instance.island.inExplorationMode)
             {
-
-                tempTime -= Time.deltaTime;
-                slider.value = tempTime;
                 screenPos = Input.mousePosition;
                 worldPos = Camera.main.ScreenToWorldPoint(screenPos);
                 worldPos.z = 0;
@@ -48,6 +45,8 @@ namespace team2
                 
                 if (canDraw)
                 {
+                    tempTime -= Time.deltaTime;
+                    slider.value = tempTime;
                     isDrawing = true;
                     
                     if (isDrawing)
@@ -57,7 +56,7 @@ namespace team2
                 }
 
             }
-            else if (Input.GetMouseButtonUp(0) && isDrawing)
+            else if (Input.GetMouseButtonUp(0) && isDrawing && !DataManager.Instance.island.inExplorationMode)
             {
                 ResetLine();
             }
