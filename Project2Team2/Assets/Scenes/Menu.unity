@@ -703,6 +703,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 526038440783136119, guid: 34b265a31a176814d92d5b695e2a0894, type: 3}
+      propertyPath: tutorialPrefab
+      value: 
+      objectReference: {fileID: 8951876251934739773, guid: 0bd15003e3b215746a9f1e212d6a8325, type: 3}
+    - target: {fileID: 526038440783136119, guid: 34b265a31a176814d92d5b695e2a0894, type: 3}
+      propertyPath: explorationPrefab
+      value: 
+      objectReference: {fileID: 8951876251934739773, guid: 532f39e421fac7c44a884dd1cbb7a7fd, type: 3}
+    - target: {fileID: 526038440783136119, guid: 34b265a31a176814d92d5b695e2a0894, type: 3}
+      propertyPath: clickAndDragPrefab
+      value: 
+      objectReference: {fileID: 8951876251934739773, guid: 57072fcdc59a7214b9fe1b75054374ae, type: 3}
     - target: {fileID: 526038440800048344, guid: 34b265a31a176814d92d5b695e2a0894, type: 3}
       propertyPath: m_RootOrder
       value: 5
