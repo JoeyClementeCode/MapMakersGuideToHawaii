@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 652712256}
         m_TargetAssemblyTypeName: team2.MenuManager, Assembly-CSharp
-        m_MethodName: loadMenu
+        m_MethodName: LoadCreditsNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -772,6 +772,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   helpScreen: {fileID: 0}
   mainUI: {fileID: 0}
+  credits1: {fileID: 1901322419}
+  credits2: {fileID: 1170872203}
 --- !u!4 &652712257
 Transform:
   m_ObjectHideFlags: 0
@@ -1261,7 +1263,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Music: Back in Haleiwa Full WSR4286101, Daydreams and Souvenirs Full WSR4280601'
+  m_text: 'WeStar Music - "Back in Haleiwa Full WSR4286101"
+
+    WeStar Music -
+    "Daydreams and Souvenirs Full WSR4280601"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
   m_sharedMaterial: {fileID: -1456448228748651388, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
@@ -2437,7 +2442,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.9999967, y: 89.29484}
+  m_AnchoredPosition: {x: 0.000016212, y: 73.2}
   m_SizeDelta: {x: 115.355, y: 30.2654}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1653317366
@@ -2939,7 +2944,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 652712256}
         m_TargetAssemblyTypeName: team2.MenuManager, Assembly-CSharp
-        m_MethodName: loadMenu
+        m_MethodName: LoadCreditsNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3022,8 +3027,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000019908, y: -42.541637}
-  m_SizeDelta: {x: 460.6615, y: 22.3744}
+  m_AnchoredPosition: {x: 0, y: -46}
+  m_SizeDelta: {x: 540.4015, y: 25.7437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2114490515
 MonoBehaviour:
@@ -3045,14 +3050,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Go Hawaii - \u201CIsland of Hawaii Historic Places\u201D\nLove Big Island
-    - \u201C14+ Fascinating Historic & Cultural Sites on the Big Island (+Map)\u201D\n\u201CDrive
-    Chain of Craters Road - Hawai\u02BBi Volcanoes National Park (U.S. National Park
-    Service).\u201D\nHawaii State Parks. \u201CKealakekua Bay State Historical Park.\u201D\n\u201CHikiau
-    Heiau, Big Island.\u201D\n\u201CHikiau Heiau | Hawaii Life Vacations.\u201D\nNational
-    Park Foundation. \u201CPu\u2019ukohola Heiau National Historic Site.\u201D \n\u201CHawai\u02BBi
-    Volcanoes National Park (U.S. National Park Service).\u201D\n\u201CNaha Stone.\u201D
-    In Wikipedia"
+  m_text: "Go Hawaii - \u201CIsland of Hawaii Historic Places\u201D\r\n\r\nLove Big
+    Island - \u201C14+ Fascinating Historic & Cultural Sites on the Big Island (+Map)\u201D\r\n\r\nHawai\u02BBi
+    Volcanoes National Park (U.S. National Park Service) - \u201CDrive Chain of Craters
+    Road\"\r\n\r\nHawaii State Parks. \u201CKealakekua Bay State Historical Park.\u201D\r\n\r\nHikiau
+    Heiau - \"Big Island.\u201D\r\n\r\nHikiau Heiau - \"Hawaii Life Vacations.\u201D\r\n\r\nNational
+    Park Foundation - \u201CPu\u2019ukohola Heiau National Historic Site.\u201D \r\n\r\nWikipedia
+    - \u201CNaha Stone.\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
   m_sharedMaterial: {fileID: -1456448228748651388, guid: 86239e0dd3a87444c899ba4342a3fe18, type: 2}
@@ -3079,8 +3083,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.34
-  m_fontSizeBase: 19.34
+  m_fontSize: 14.71
+  m_fontSizeBase: 14.71
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
