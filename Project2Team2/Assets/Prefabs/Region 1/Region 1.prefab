@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 457353774010714133}
   m_Layer: 5
   m_Name: ExploreButton
-  m_TagString: Untagged
+  m_TagString: Region
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,7 +310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22, y: -172}
+  m_AnchoredPosition: {x: 0, y: -172}
   m_SizeDelta: {x: 193.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &321847244165406049
@@ -456,7 +456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.006592, y: -3.8696}
+  m_AnchoredPosition: {x: 0, y: -3.8696}
   m_SizeDelta: {x: 435.8401, y: 434.6671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7588803619912885353

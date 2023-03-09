@@ -12,6 +12,7 @@ namespace team2
         public bool tutorialShown = false;
         public bool clickShown = false;
         public bool explorationShown = false;
+        public bool exploration2Shown = false;
         
         public void Load(int select)
         {
@@ -33,6 +34,12 @@ namespace team2
                 {
                     DataManager.Instance.info.ClickDisplay();
                     clickShown = true;
+                }
+
+                if (clickShown && DataManager.Instance.island.inExplorationMode && !exploration2Shown)
+                {
+                    DataManager.Instance.info.Exploration2Display();
+                    exploration2Shown = false;
                 }
             }
             else

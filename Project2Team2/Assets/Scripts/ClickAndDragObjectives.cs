@@ -46,5 +46,21 @@ namespace team2
                 DataManager.Instance.info.MakeResourceDisplay(infoPopUp);
             }
         }
+
+        private void OnMouseEnter()
+        {
+            if (DataManager.Instance.island.inExplorationMode && (transform.tag != "Obstacle" || transform.tag != "Start"))
+            {
+                LeanTween.scale(gameObject, new Vector3(.55f, .55f, 1.5f), 0.05f);
+            }
+        }
+        
+        private void OnMouseExit()
+        {
+            if (DataManager.Instance.island.inExplorationMode && (transform.tag != "Obstacle" || transform.tag != "Start"))
+            {
+                LeanTween.scale(gameObject, new Vector3(.4f, .4f, 1.5f), 0.05f);
+            }
+        }
     }
 }

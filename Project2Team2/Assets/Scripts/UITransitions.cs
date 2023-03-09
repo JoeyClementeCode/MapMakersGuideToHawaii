@@ -27,6 +27,9 @@ namespace team2
                     else if (sceneTransitionState == 1)
                         SceneTransitionOut();
                     break;
+                case "Fade":
+                    FadeWhite();
+                    break;
                 case "Micro":
                     RegionTransition();
                     break;
@@ -39,6 +42,13 @@ namespace team2
             Camera.main.orthographicSize = 5.0f;
             LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 0.0f, 1.0f);
             sceneTransitionState = 1;
+        }
+        
+        public void FadeWhite()
+        {
+            this.gameObject.GetComponent<CanvasGroup>().alpha = 0.0f;
+            LeanTween.alphaCanvas(this.gameObject.GetComponent<CanvasGroup>(), 1.0f, 1.0f);
+            sceneTransitionState = 0;
         }
 
         private void SceneTransitionOut()

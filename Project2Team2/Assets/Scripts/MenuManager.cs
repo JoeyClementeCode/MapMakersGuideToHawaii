@@ -34,7 +34,7 @@ namespace team2
         
         public IEnumerator LoadMenu()
         {
-            DataManager.Instance.transitions.Action();
+            DataManager.Instance.transitions.FadeWhite();
             Destroy(DataManager.Instance.info.activeRegionUI);
             yield return new WaitForSeconds(1);
             DataManager.Instance.mainUI.SetActive(false);
@@ -44,7 +44,7 @@ namespace team2
 
         public IEnumerator LoadGameStart()
         {
-            DataManager.Instance.transitions.Action();
+            DataManager.Instance.transitions.FadeWhite();
             yield return new WaitForSeconds(1);
             DataManager.Instance.mainUI.SetActive(true);
             DataManager.Instance.transitions.Action();
@@ -59,7 +59,7 @@ namespace team2
 
         public IEnumerator LoadCredits()
         {
-            DataManager.Instance.transitions.Action();
+            DataManager.Instance.transitions.FadeWhite();
             yield return new WaitForSeconds(1);
             DataManager.Instance.transitions.Action();
             SceneManager.LoadScene(6);

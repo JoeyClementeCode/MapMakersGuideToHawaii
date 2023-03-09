@@ -15,6 +15,7 @@ namespace team2
         public GameObject tutorialPrefab;
         public GameObject clickAndDragPrefab;
         public GameObject explorationPrefab;
+        public GameObject exploration2Prefab;
         [HideInInspector] public bool dropDownInUse = false;
 
         public void MakeDisplay()
@@ -71,8 +72,17 @@ namespace team2
             activeRegionUI = newUI;
             dropDownInUse = true;
         }
+
+        public void Exploration2Display()
+        {
+            InUse();
+            GameObject newUI = Instantiate(exploration2Prefab, transform, true);
+            
+            activeRegionUI = newUI;
+            dropDownInUse = true;
+        }
         
-        private void InUse()
+        public void InUse()
         {
             if (activeRegionUI != null)
                 Destroy(activeRegionUI);

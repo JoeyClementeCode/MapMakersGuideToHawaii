@@ -17,13 +17,17 @@ namespace team2
         {
             button = GetComponent<Button>();
             
-            if (transform.parent.CompareTag("Region"))
+            if (transform.CompareTag("Region"))
             {
                 button.onClick.AddListener(RegionButton);
             }
             else if (transform.CompareTag("Micro"))
             {
                 button.onClick.AddListener(MicroButton);
+            }
+            else if (transform.CompareTag("Tutorial"))
+            {
+                button.onClick.AddListener(TutorialButton);
             }
         }
 
@@ -56,6 +60,12 @@ namespace team2
             }
             DataManager.Instance.island.inExplorationMode = DataManager.Instance.island.Explore();
             Destroy(transform.parent.gameObject);
+        }
+
+        private void TutorialButton()
+        {
+            DataManager.Instance.soundManager.SetAudio("PutDownPiece2");
+            DataManager.Instance.info.InUse();
         }
     }
 }
