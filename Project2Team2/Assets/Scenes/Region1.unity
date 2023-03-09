@@ -414,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c437778b6b20e43bd02c184bd3f86f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoPopUp: {fileID: 8951876251934739773, guid: d16e0450d8c9dc84c8788c89cfe9406b, type: 3}
+  infoPopUp: {fileID: 8951876251934739773, guid: 036702a29b2c4744b9b27ac10dcebc07, type: 3}
 --- !u!61 &160312024
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -482,7 +482,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 221b5b90ca531cd42b40f6e22065f12e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ae554344ab0588489feba33bfff16d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1724,7 +1724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c437778b6b20e43bd02c184bd3f86f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoPopUp: {fileID: 0}
+  infoPopUp: {fileID: 8951876251934739773, guid: 685b057712c629140b86a50b80338cff, type: 3}
 --- !u!61 &1116832033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2005,7 +2005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c437778b6b20e43bd02c184bd3f86f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoPopUp: {fileID: 0}
+  infoPopUp: {fileID: 8951876251934739773, guid: 849b151a1cdc3194a94e39f36193a5ee, type: 3}
 --- !u!61 &1251459483
 BoxCollider2D:
   m_ObjectHideFlags: 0
